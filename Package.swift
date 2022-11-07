@@ -22,6 +22,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CUELive",
+            dependencies: [ "CUEBluetooth", "engine", "TrueTime", "CocoaMQTT", "Reachability", "lottie-ios" ],
             url: "https://s3.amazonaws.com/swift-package-manager/CUELive/3.5.9/CUELive.3.5.9.xcframework.zip",
             checksum: "1527c19b9d4eaa77be470e451a1cca13c96193dc82cebfa3fa685641bb41b8d1"
         ),
