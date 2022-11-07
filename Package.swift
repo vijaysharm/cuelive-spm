@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive-framework", "CUEBluetooth", "engine"]
+            targets: ["CUELive", "CUEBluetooth", "engine"]
         ),
     ],
     dependencies: [
@@ -21,19 +21,19 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "CUELive-framework",
+            name: "CUELive",
             url: "https://s3.amazonaws.com/swift-package-manager/CUELive/3.5.9/CUELive.3.5.9.xcframework.zip",
-            checksum: "7a7dfb557774f00bb91790a711adf092771a9eff8ac925af6084189bd101fb27"
+            checksum: "1527c19b9d4eaa77be470e451a1cca13c96193dc82cebfa3fa685641bb41b8d1"
         ),
         .binaryTarget(
             name: "CUEBluetooth",
             url: "https://s3.amazonaws.com/swift-package-manager/CUEBluetooth/0.0.12/CUEBluetooth.0.0.12.xcframework.zip",
-            checksum: "f40017a7de5742bce69e18cf01f53800b6a220f3890f5ae1ccf3737ed53d3244"
+            checksum: "a19f8115a63706c033580e2bf41dfb4dd860f77c4f7ca132eed700775281b7e7"
         ),
         .binaryTarget(
             name: "engine",
             url: "https://s3.amazonaws.com/swift-package-manager/engine/1.46.7/engine.1.46.7.xcframework.zip",
-            checksum: "94eccf59b5206ae6e6dd5745cfd549e0ca30f14d0829a848060304b09a0073f5"
+            checksum: "64635141396c41969c7ae65272f85fc8091810cdc465031b914d7089fb0e6107"
         ),
     ]
 )
