@@ -13,11 +13,10 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/chrisob55/TrueTime.swift.git", from: "5.0.3"),
-        // .package(url: "https://github.com/instacart/TrueTime.swift.git", from: "5.0.3"), // instacart hasn't created a SPM yet
-        .package(url: "https://github.com/emqx/CocoaMQTT.git", from: "1.3.0-rc.2"),
-        .package(url: "https://github.com/ashleymills/Reachability.swift.git", from: "5.0.0"),
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "3.3.0"),
+        .package(url: "https://github.com/chrisob55/TrueTime.swift.git", .exact("5.0.3")),
+        .package(url: "https://github.com/emqx/CocoaMQTT.git", .exact("1.3.0-rc.2")),
+        .package(url: "https://github.com/ashleymills/Reachability.swift.git", .exact("5.0.0")),
+        .package(url: "https://github.com/airbnb/lottie-ios.git", .exact("3.3.0")),
     ],
     targets: [
         .binaryTarget(
