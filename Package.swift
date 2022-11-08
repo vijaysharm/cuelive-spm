@@ -9,14 +9,13 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive", "CUEBluetooth", "engine"]
+            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie"]
         ),
     ],
     dependencies: [
         .package(url: "https://github.com/chrisob55/TrueTime.swift.git", .exact("5.0.3")),
         .package(url: "https://github.com/emqx/CocoaMQTT.git", .exact("1.3.0-rc.2")),
         .package(url: "https://github.com/ashleymills/Reachability.swift.git", .exact("5.0.0")),
-        .package(url: "https://github.com/airbnb/lottie-ios.git", .exact("3.3.0")),
     ],
     targets: [
         .binaryTarget(
@@ -33,6 +32,11 @@ let package = Package(
             name: "engine",
             url: "https://s3.amazonaws.com/swift-package-manager/engine/1.46.7/engine.1.46.7.xcframework.zip",
             checksum: "64635141396c41969c7ae65272f85fc8091810cdc465031b914d7089fb0e6107"
+        ),
+        .binaryTarget(
+            name: "Lottie",
+            url: "https://s3.amazonaws.com/swift-package-manager/Lottie/3.4.0/Lottie.3.4.0.xcframework.zip",
+            checksum: "26a3e35439e525f972ead28191e878e03373825bbfd35780d928ac5036ebb745"
         ),
     ]
 )
