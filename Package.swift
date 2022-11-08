@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie"]
+            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie", "Reachability"]
         ),
     ],
     dependencies: [
@@ -37,6 +37,11 @@ let package = Package(
             name: "Lottie",
             url: "https://s3.amazonaws.com/swift-package-manager/Lottie/3.4.0/Lottie.3.4.0.xcframework.zip",
             checksum: "26a3e35439e525f972ead28191e878e03373825bbfd35780d928ac5036ebb745"
+        ),
+        .binaryTarget(
+            name: "Reachability",
+            url: "https://s3.amazonaws.com/swift-package-manager/Reachability/5.0.0/Reachability.5.0.0.xcframework.zip",
+            checksum: "c7c6f270fed843f2ffe3a11b17a0396fb7a63086fd5c5c727c3e331fc1e1983c"
         ),
     ]
 )
