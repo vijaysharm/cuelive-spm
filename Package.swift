@@ -31,22 +31,22 @@ let package = Package(
         .binaryTarget(
             name: "Lottie",
             url: "https://s3.amazonaws.com/swift-package-manager/Lottie/3.4.0/Lottie.3.4.0.xcframework.zip",
-            checksum: "26a3e35439e525f972ead28191e878e03373825bbfd35780d928ac5036ebb745"
+            checksum: "63a2a125d74bf8f4fa70e50fc3aa6e43ec8878d6e5ac371fb549330f409cbb9d"
         ),
         .binaryTarget(
             name: "TrueTime",
             url: "https://s3.amazonaws.com/swift-package-manager/TrueTime/5.1.0/TrueTime.5.1.0.xcframework.zip",
-            checksum: "d61d008695ba6ba32fe055e258fe11b8d43472c1075a2679ff334833f935e7e4"
+            checksum: "07b957755b028bfc325645bff7c75fd1bfdc548e6715cae6d3921145e11a10b3"
         ),
         .binaryTarget(
             name: "MQTTClient",
             url: "https://s3.amazonaws.com/swift-package-manager/MQTTClient/0.15.3/MQTTClient.0.15.3.xcframework.zip",
-            checksum: "2bc94a7cfff0dac132017f573d2c6ee227b9ebeb397c04b434e5c9341c2bb7c5"
+            checksum: "933cb46fc849b595256ac36e0884459bf0516bc62fcf095c4f780042f8579393"
         ),
         .binaryTarget(
             name: "SocketRocket",
             url: "https://s3.amazonaws.com/swift-package-manager/SocketRocket/0.5.1/SocketRocket.0.5.1.xcframework.zip",
-            checksum: "945ca9b5472a702d92c98cd820714c01853e7dd88311ea0403781fbcc6c64deb"
+            checksum: "832105e93a00508e068d324645fbd3966eb9f28ab4d909f87686e9e432be517c"
         )
     ]
 )
