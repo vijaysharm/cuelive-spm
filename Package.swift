@@ -9,12 +9,8 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie"]
+            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie", "TrueTime", "MQTTClient", "SocketRocket"]
         ),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/chrisob55/TrueTime.swift.git", .exact("5.0.3")),
-        .package(url: "https://github.com/emqx/CocoaMQTT.git", .exact("1.3.0-rc.2")),
     ],
     targets: [
         .binaryTarget(
@@ -25,17 +21,32 @@ let package = Package(
         .binaryTarget(
             name: "CUEBluetooth",
             url: "https://s3.amazonaws.com/swift-package-manager/CUEBluetooth/0.0.12/CUEBluetooth.0.0.12.xcframework.zip",
-            checksum: "a19f8115a63706c033580e2bf41dfb4dd860f77c4f7ca132eed700775281b7e7"
+            checksum: "f40017a7de5742bce69e18cf01f53800b6a220f3890f5ae1ccf3737ed53d3244"
         ),
         .binaryTarget(
             name: "engine",
             url: "https://s3.amazonaws.com/swift-package-manager/engine/1.46.7/engine.1.46.7.xcframework.zip",
-            checksum: "64635141396c41969c7ae65272f85fc8091810cdc465031b914d7089fb0e6107"
+            checksum: "94eccf59b5206ae6e6dd5745cfd549e0ca30f14d0829a848060304b09a0073f5"
         ),
         .binaryTarget(
             name: "Lottie",
             url: "https://s3.amazonaws.com/swift-package-manager/Lottie/3.4.0/Lottie.3.4.0.xcframework.zip",
             checksum: "26a3e35439e525f972ead28191e878e03373825bbfd35780d928ac5036ebb745"
+        ),
+        .binaryTarget(
+            name: "TrueTime",
+            url: "https://s3.amazonaws.com/swift-package-manager/TrueTime/5.1.0/TrueTime.5.1.0.xcframework.zip",
+            checksum: "d61d008695ba6ba32fe055e258fe11b8d43472c1075a2679ff334833f935e7e4"
+        ),
+        .binaryTarget(
+            name: "MQTTClient",
+            url: "https://s3.amazonaws.com/swift-package-manager/MQTTClient/0.15.3/MQTTClient.0.15.3.xcframework.zip",
+            checksum: "2bc94a7cfff0dac132017f573d2c6ee227b9ebeb397c04b434e5c9341c2bb7c5"
+        ),
+        .binaryTarget(
+            name: "SocketRocket",
+            url: "https://s3.amazonaws.com/swift-package-manager/SocketRocket/0.5.1/SocketRocket.0.5.1.xcframework.zip",
+            checksum: "945ca9b5472a702d92c98cd820714c01853e7dd88311ea0403781fbcc6c64deb"
         )
     ]
 )
