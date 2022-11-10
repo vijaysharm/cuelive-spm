@@ -9,11 +9,12 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive", "CUEBluetooth", "engine", "lottie-ios", "TrueTime", "MQTTClient", "SocketRocket"]
+            targets: ["CUELive", "CUEBluetooth", "engine", "TrueTime", "MQTTClient", "SocketRocket"]
         ),
     ],
     dependencies: [
         .package(
+            name: "Lottie",
             url: "https://github.com/airbnb/lottie-ios",
             .exact("3.4.4")
         ),
@@ -21,6 +22,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CUELive",
+            dependencies: [ "Lottie" ],
             url: "https://s3.amazonaws.com/swift-package-manager/CUELive/3.5.13/CUELive.3.5.13.xcframework.zip",
             checksum: "242ecbb4621181d75626daf309923546e20e5c57d46a1d06620e8f319613a423"
         ),
