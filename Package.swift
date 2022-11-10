@@ -12,14 +12,18 @@ let package = Package(
             targets: ["CUELive", "CUEBluetooth", "engine", "Lottie", "TrueTime", "MQTTClient", "SocketRocket"]
         ),
     ],
+    dependencies: [
+        .package(
+            name: "Lottie",
+            url: "https://github.com/airbnb/lottie-ios",
+            .exact("3.4.4")
+        ),
+    ],
     targets: [
         .binaryTarget(
             name: "CUELive",
             url: "https://s3.amazonaws.com/swift-package-manager/CUELive/3.5.13/CUELive.3.5.13.xcframework.zip",
-            checksum: "242ecbb4621181d75626daf309923546e20e5c57d46a1d06620e8f319613a423",
-            linkerSettings: [
-                .unsafeFlags(["-all_load"]),
-            ]
+            checksum: "242ecbb4621181d75626daf309923546e20e5c57d46a1d06620e8f319613a423"
         ),
         .binaryTarget(
             name: "CUEBluetooth",
@@ -30,11 +34,6 @@ let package = Package(
             name: "engine",
             url: "https://s3.amazonaws.com/swift-package-manager/engine/1.46.7/engine.1.46.7.xcframework.zip",
             checksum: "ee1cb50708902f98f1a47dda846b5b188535487a2b39ac837e57ddfde6297e59"
-        ),
-        .binaryTarget(
-            name: "Lottie",
-            url: "https://s3.amazonaws.com/swift-package-manager/Lottie/3.4.0/Lottie.3.4.0.xcframework.zip",
-            checksum: "63a2a125d74bf8f4fa70e50fc3aa6e43ec8878d6e5ac371fb549330f409cbb9d"
         ),
         .binaryTarget(
             name: "TrueTime",
