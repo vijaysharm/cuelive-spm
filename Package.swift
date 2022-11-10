@@ -9,12 +9,11 @@ let package = Package(
     products: [
         .library(
             name: "CUELive",
-            targets: ["CUELive", "CUEBluetooth", "engine", "Lottie", "TrueTime", "MQTTClient", "SocketRocket"]
+            targets: ["CUELive", "CUEBluetooth", "engine", "lottie-ios", "TrueTime", "MQTTClient", "SocketRocket"]
         ),
     ],
     dependencies: [
         .package(
-            name: "Lottie",
             url: "https://github.com/airbnb/lottie-ios",
             .exact("3.4.4")
         ),
